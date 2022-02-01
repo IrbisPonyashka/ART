@@ -10,22 +10,18 @@
     padding: 0 auto;
 }
 .header__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 10px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
 }
 .content{
     margin-top: 100px;
     position: relative;
     height: 800px;
-    width: 100%;
 }
 .box, .box2, .box3{
     margin-top: 100px;
     position: relative;
     height: 800px;
-    width: 100%;
 }
 .redboy, .earth, .moonSEA, .smile2{
     opacity: 0;
@@ -82,3 +78,19 @@
 .smile2:hover{
     opacity: 1;
 }
+/* MEIDA start*/
+
+@media (max-width:1200px) {
+    .header__container{
+        grid-template-columns: repeat(2,2fr);
+    }
+    
+}
+@media (max-width:800px) {
+    .header__container{
+        grid-template-columns: repeat(1,4fr);
+    }
+}
+
+
+/* Media end */
