@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background: black;
+}
 .container{
     max-width: 1500px;
     width: 100%;
@@ -18,18 +21,18 @@
     position: relative;
     height: 800px;
 }
-.box, .box2, .box3{
+.box, .box2, .box3, .box4, .box5{
     margin-top: 100px;
     position: relative;
     height: 800px;
 }
-.redboy, .earth, .moonSEA, .smile2{
+.redboy, .earth, .moonSEA, .smile2, .wings, .hands{
     opacity: 0;
     position: absolute;
     transition: all 0.9s;
     height: 100%;
 }
-.boy, .moon, .moon1, .smile1{
+.boy, .moon, .moon1, .smile1, .nowings, .BlackHand{
     opacity: 1;
     position: absolute;
     transition: all 0.9s;
@@ -52,6 +55,18 @@
 .moon:hover{
     opacity: 1;
 } */
+.BlackHand:hover{
+    opacity: 0;
+}
+.hands:hover{
+    opacity: 1;
+}
+.nowings:hover{
+    opacity: 0;
+}
+.wings:hover{
+    opacity: 1;
+}
 .boy:hover{
     opacity: 0;
 }
